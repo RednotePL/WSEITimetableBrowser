@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "WSEITimetable",
+	"description": "Generates CSV from timetable",
+	"version": "1.1",
+	"content_scripts": [
+		{
+			"js": [
+				"background.js"
+			],
+			"matches": [
+				"https://estudent.wsei.edu.pl/*"
+			]
+		}
+	],
+	"permissions": [
+		"https://estudent.wsei.edu.pl/*"
+	]
+}
